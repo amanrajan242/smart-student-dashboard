@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome, Aman</h1>
+            <button id="themeToggle">Toggle Theme</button>
+        </header>
+
+        <section class="grades">
+            <h2>Your Courses</h2>
+            <div class="progress">
+                <label>Math</label>
+                <progress value="80" max="100"></progress>
+                <label>Science</label>
+                <progress value="60" max="100"></progress>
+                <label>English</label>
+                <progress value="90" max="100"></progress>
+            </div>
+        </section>
+
+        <section class="todo">
+            <h2>To-Do List</h2>
+            <input type="text" id="todoInput" placeholder="Add task...">
+            <button onclick="addTask()">Add</button>
+            <ul id="todoList"></ul>
+        </section>
+
+        <section class="attendance">
+            <h2>Attendance</h2>
+            <canvas id="attendanceChart" width="300" height="300"></canvas>
+        </section>
+
+        <section class="quote">
+            <h2>Motivational Quote</h2>
+            <p id="quoteText">Loading...</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
